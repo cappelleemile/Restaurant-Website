@@ -1,0 +1,96 @@
+<html lang="nl-be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hoofdpagina</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300..700&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+    </style>
+
+    <script>
+        function switchStylesheet() {
+            let link = document.getElementById("stylesheet");
+            if (!link) return;
+
+            // Detecteer mobiele apparaten op basis van de user agent
+            let isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            let newHref = isMobile ? "mobiel.css" : "style.css";
+
+            if (link.getAttribute("href") !== newHref) {
+                link.setAttribute("href", newHref);
+                console.log("Switched to:", newHref); // Debug info in de console
+            }
+        }
+
+        // Uitvoeren bij pagina-laden
+        document.addEventListener("DOMContentLoaded", switchStylesheet);
+    </script>
+
+    <script src="https://kit.fontawesome.com/a02f778d49.js" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header><a href="index.html"><img src="images/logo.png" alt="logo"></a></header>
+        <nav>
+            <ul>
+                <li><a href="#">WIJNKAART</a></li>
+                <li><a href="#">GROEPSMENU</a></li>
+                <li><a href="#">ROUWMAALTIJDEN</a></li>
+                <li><a href="#">RESERVERER</a></li>
+                <li><a href="#">CADEAUBON</a>
+                </li>
+            </ul>
+        </nav>
+        <section><img src="images/sectionImg.png" alt="img2">
+            <div class="sectionHeaderImg">
+                <h1>Welkom in<br>The Cuisine Restaurant!</h1><a href="#" id="sectionBtn"><span>Reserveer</span></a>
+            </div>
+        </section>
+        <article class="menus">
+            <h1>ONZE MENU'S</h1><a class="articleSection" href="#"><img src="images/wijn.jpg" alt="wijn">
+                <h3>WIJNKAART</h3>
+            </a><a class="articleSection" href="#"><img src="images/groep.jpg" alt="groep">
+                <h3>GROEPSMENU</h3>
+            </a><a class="articleSection" href="#"><img src="images/rouw.jpg" alt="rouw">
+                <h3>ROUWMAALTIJDEN</h3>
+            </a>
+        </article>
+        <article class="contact">
+            <h1>NEEM CONTACT OP</h1>
+            <p>Proinde concepta rabie saeviore, quam desperatio incendebat et fames, amplificatis viribus ardore
+                incohibili in excidium urbium matris Seleuciae efferebantur, quam comes tuebatur Castricius tresque
+                legiones bellicis sudoribus induratae.</p><a href="telto:+3234567890"><i class="fa-solid fa-phone"></i>
+                  +324 567 890</a><br><a href="mailto:mail@emilewebworks.be"><i class="fa-solid fa-envelope"></i>  
+                mail@emilewebworks.be</a>
+        </article>
+        <article class="about">
+            <div class="aboutImg"><img src="images/img3.jpg" alt="img1"></div>
+            <div class="aboutText">
+                <p>Utque proeliorum periti rectores primo catervas densas opponunt et fortes, deinde leves armaturas,
+                    post iaculatores ultimasque subsidiales acies, si fors adegerit, iuvaturas, ita praepositis urbanae
+                    familiae suspensae digerentibus sollicite, quos insignes faciunt virgae dexteris aptatae velut
+                    tessera data castrensi iuxta vehiculi frontem omne textrinum incedit: huic atratum coquinae iungitur
+                    ministerium, dein totum promiscue servitium cum otiosis plebeiis de vicinitate coniunctis: postrema
+                    multitudo spadonum a senibus in pueros desinens, obluridi distortaque lineamentorum conpage
+                    deformes, ut quaqua incesserit quisquam cernens mutilorum hominum agmina detestetur memoriam
+                    Samiramidis reginae illius veteris, quae teneros mares castravit omnium prima velut vim iniectans
+                    naturae, eandemque ab instituto cursu retorquens, quae inter ipsa oriundi crepundia per primigenios
+                    seminis fontes tacita quodam modo lege vias propagandae posteritatis ostendit.</p>
+            </div>
+        </article>
+        <footer>
+            <p>EMILE CAPPELLE © 2025</p>
+            <div class="footerSocialMedia"><a href="https://www.instagram.com/emilewebworks/"><i
+                        class="fa-brands fa-instagram"></i></a> <a href="https://www.facebook.com/emilewebworks"><i
+                        class="fa-brands fa-facebook"></i></a></div>
+        </footer>
+    </div>
+</body>
+
+</html>
