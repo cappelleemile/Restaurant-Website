@@ -6,4 +6,4 @@ A sleek, responsive restaurant website with animations and effects.
 - HTML, CSS, JavaScript 
 - Smooth scrolling & interactive elements
 
-🔗 **Live demo:** [Watch here](https://cappelleemile.github.io/restaurant-website/)
+🔗 **Live demo:** [Watch here](https://cappelleemile.github.io/Restaurant-Website/)
