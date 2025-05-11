@@ -1,6 +1,6 @@
 # 🍽️ Restaurant Website
 
-A sleek, responsive restaurant website with animations and effects. 
+A sleek restaurant website with animations and effects. 
 
 🚀 **Technologies used:** 
 - HTML, CSS, JavaScript 
